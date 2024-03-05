@@ -9,7 +9,9 @@ use Symfony\Component\Validator\Constraints as Assert;
 
 /** A book. */
 #[ORM\Entity]
-#[ApiResource]
+#[ApiResource(
+    description: "A book"
+)]
 class Book
 {
     /** The ID of this book. */
